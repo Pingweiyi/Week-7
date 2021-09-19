@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Task</title>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+		<script src="./task.js"></script>
+	</head>
+	<body>
+		
+		<div id="bbb">
+		  <component-a></component-a>
+		  <component-b></component-b>
+		  <component-c></component-c>
+		  {{msg}}
+		</div>
+		
+		
+		
+		<blog-post title="My journey with Vue"></blog-post>
+		<blog-post title="Blogging with Vue"></blog-post>
+		<blog-post title="Why Vue is so fun"></blog-post>
+		
+	 <div id="ccc">
+     <greeting-container :greeting="greeting"></person-container>
+	 </div>
+		
+	
+		<div id="qqq">
+		<child :text="msg"></child>
+		</div>
+		
+		<div id = "www">
+			<button @click="show = !show"></button>
+			<p v-if="show"></p>
+				
+		<script>
+		new Vue({
+			el:'#www',
+			data:{
+				show:true
+			},
+		});
+		
+		
+		
+		
+		
+		<div id="aaa">
+		<button v=on: click="show = !show">
+			click to display/hide
+        </button>
+		<transition name"fade"><p v-if="show">hell0</p></transition>
+		</div>
+		<script>
+		new Vue({
+			el:'#aaa',
+			data:{
+				show:true
+			}
+		})
+		</scrip>
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+	
+</html>
